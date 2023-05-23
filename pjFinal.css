@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang&family=Roboto&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Battambang', cursive;
+    /* font-family: 'Roboto', sans-serif; */
+}
+.navbar {
+    width: 100%;
+}
+.myheader{
+    position: sticky;
+    left: 0;
+    z-index: 99;
+    top: 0;
+}
+.main-admin{
+    width: 100%;
+    background-color: rgb(103, 103, 103);
+}
+.dash{
+    background-color: grey;
+    width: 280px;
+}
+
+.dash .admin img{
+    height: 100%;
+    width: 40%;
+}
+.poster img {
+    height: 100%;
+    width: 20%;
+}
+.poster{
+    width: 100%;
+}
+.left button{
+    color: white;
+}
+section ul i .sdam{
+    float: right;
+}
+section {
+    display: flex;
+}
+
+section .contain .row{
+    padding: 10px 0px;
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* gap: 10px; */
+}
+section .contain .box{
+    float: left;
+    width: 260px;
+    height: 220px;
+    margin-left: 15px;
+    margin-top: 10px;
+    /* background-color: brown; */
+    border-radius: 20px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.366);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+}
+section .contain .box .txt{
+    padding-bottom: 10px;
+}
+section .contain .box .txt span{
+    color: orangered;
+    font-weight: bold;
+}
+section .contain img{
+    width: 80%;
+}
+
+@media (max-width: 1280px) {
+    section .contain .box{
+        width: 210px;
+        height: 190px;
+        padding: 10px;
+        margin-left: 3px;
+    }
+ }
+@media (max-width: 1024px) {
+    section .contain .row{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    section .contain .box{
+        width: 300px;
+        height: 240px;
+        padding: 10px;
+    }
+ }
+@media (max-width: 768px) {
+    section .contain .row{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    section .contain .box{
+        width: 200px;
+        height: 180px;
+        padding: 10px;
+    }
+    .dash{
+        width: 210px;
+    }
+ }
+ /* Mobile phone */
+@media (max-width: 575.98px) {
+
+}
